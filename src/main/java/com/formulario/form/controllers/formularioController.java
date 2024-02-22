@@ -10,7 +10,7 @@ import java.util.Map;
 
 
 @Controller
-@RequestMapping("/form")
+@RequestMapping("/grupo16/form")
 public class formularioController {
     @GetMapping("/formulario")
     public String formulario(){
