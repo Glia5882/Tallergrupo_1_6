@@ -12,7 +12,7 @@ import java.util.Map;
 @Controller
 @RequestMapping("/grupo16/form")
 public class formularioController {
-    @GetMapping("/formulario")
+    @GetMapping("/grupo16/formulario")
     public String formulario(){
         return("formulario.html");
     }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/grupo16/form")
 public class graciasController {
 
-    @GetMapping("/gracias")
+    @GetMapping("/grupo16/gracias")
     public String gracias() {
         return ("gracias.html");
     }

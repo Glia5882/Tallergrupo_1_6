@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/grupo16/form")
 public class presentacionController {
 
-    @GetMapping("/presentacion")
+    @GetMapping("/grupo16/presentacion")
     public String presentacion() {
         return ("paginaPresentacion.html");
     }
