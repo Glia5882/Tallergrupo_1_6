@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequestMapping("/grupo16/form")
 public class menuController {
 
-    @GetMapping("/grupo16/menu")
+    @GetMapping("/menu")
     public String menu() {
         return ("menu.html");
     }
