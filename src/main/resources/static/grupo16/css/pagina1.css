@@ -1,31 +1,63 @@
-body{
-    background: rgb(226, 247, 246 );
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('path_to_your_background_image.jpg');
+    background-size: cover;
+    color: #fff; /* Asegúrate de que este color contraste con tu fondo */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
 }
 
-.titulo-centrado {
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    color: #4caf50; 
+}
+
+.member-card {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro para mejorar el contraste */
+    color: #fff; /* Texto claro */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+}
+
+.member-name {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.member-role {
+    font-style: italic;
+    color: #aed581; 
+}
+
+.member-description {
+    margin-top: 10px;
 }
 
 .button {
-    border: none;
+    display: block;
+    width: 200px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #388e3c;
     color: white;
-    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-  }
-  
-  .button1 {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #04AA6D;
-  }
-  
-  .button1:hover {
-    background-color: #04AA6D;
-    color: white;
-  }
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button1:hover {
+    background-color: #66bb6a;
+    transform: scale(1.05);
+}
