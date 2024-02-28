@@ -21,6 +21,6 @@ public class formularioController {
     public String enviarFormulario(@RequestParam Map<String, String> formData, Model model){
         System.out.println("Recibido: " + formData);
         model.addAttribute("graciasMensaje","Gracias por enviar el formulario!");
-        return "formulario";
+        return "formulario.html";
     }
 }
