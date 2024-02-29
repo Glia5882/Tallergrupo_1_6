@@ -2,11 +2,11 @@ package com.formulario.form.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.ui.Model;
-import java.util.Map;
+import com.formulario.form.entity.Application;
+import com.formulario.form.ApplicationRepository.ApplicationRepository;
+
 
 
 @Controller
@@ -17,10 +17,26 @@ public class formularioController {
         return("formulario.html");
     }
 
+    private ApplicationRepository applicationRepository;
+
     @PostMapping("/submit")
-    public String enviarFormulario(@RequestParam Map<String, String> formData, Model model){
-        System.out.println("Recibido: " + formData);
-        model.addAttribute("graciasMensaje","Gracias por enviar el formulario!");
+    public String enviarFormulario(Application formData){
+        String nombres = formData.getNombres();
+        String apellidos = formData.getApellidos();
+        String correo = formData.getCorreos();
+        int semestre = formData.getSemestre();
+        String descripcion = formData.getDescripcion();
+        
+        Application application = new Application();
+        application.setNombres(nombres);
+        application.setApellidos(apellidos);
+        application.setCorreos(correo);
+        application.setSemestre(semestre);
+        application.setDescripcion(descripcion);
+
+        applicationRepository.save(application);
+
+        //model.addAttribute("graciasMensaje","Gracias por enviar el formulario!");
         return "formulario.html";
     }
 }
