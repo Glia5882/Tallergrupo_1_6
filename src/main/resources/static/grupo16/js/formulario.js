@@ -62,11 +62,11 @@ contadorCorreo.textContent = `${correo.length}/${maxLongitud}`;
         correoValido = true;
     }
 }
-const inputCorreo = document.getElementById("nuevoCorreos");
+const inputCorreo = document.getElementById("correos");
 inputCorreo.addEventListener("input", validarCorreos);
 
 function validarSemestre() {
-const semestreSeleccionado = document.getElementById("nuevoSemestres").value;
+const semestreSeleccionado = document.getElementById("semestre").value;
 const spanErrorSemestres = document.getElementById("mensajesErrorSemestres");
 
     if (semestreSeleccionado === "0") {
@@ -78,11 +78,11 @@ const spanErrorSemestres = document.getElementById("mensajesErrorSemestres");
     }
 }
 // Añadir el event listener al select
-const selectSemestre = document.getElementById("nuevoSemestres");
+const selectSemestre = document.getElementById("semestre");
 selectSemestre.addEventListener("change", validarSemestre);
 
 function validarDescripcion() {
-const descripcion = document.getElementById("nuevaDescripcion").value;
+const descripcion = document.getElementById("descripcion").value;
 const mensajeErrorDescripcion = document.getElementById("mensajeErrorDescripcion");
 
     if (descripcion.trim() === '') {
@@ -94,5 +94,5 @@ const mensajeErrorDescripcion = document.getElementById("mensajeErrorDescripcion
     }
 }
 
-const textAreaDescripcion = document.getElementById("nuevaDescripcion");
+const textAreaDescripcion = document.getElementById("descripcion");
 textAreaDescripcion.addEventListener("input", validarDescripcion);
