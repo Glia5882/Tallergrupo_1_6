@@ -8,14 +8,14 @@ const maxLongitud = 100;
 
 contadorNombres.textContent = `${nombres.length}/${maxLongitud}`;
 
-if (nombres.length > maxLongitud){
-    spanError.classList.remove("ocultar");
-    nombreValido = false;
-}
-else{
-    spanError.classList.add("ocultar");
-    nombreValido = true;
-}
+    if (nombres.length > maxLongitud){
+        spanError.classList.remove("ocultar");
+        nombreValido = false;
+    }
+    else{
+        spanError.classList.add("ocultar");
+        nombreValido = true;
+    }
 }
 const inputName = document.getElementById("nuevoNombre")
 inputName.addEventListener("input", validarNombres);
@@ -28,15 +28,16 @@ const maxLongitud = 100;
 
 contadorApellido.textContent = `${apellidos.length}/${maxLongitud}`;
 
-if (apellidos.length > maxLongitud){
-    spanError.classList.remove("ocultar");
-    apellidoValido = false;
+    if (apellidos.length > maxLongitud){
+        spanError.classList.remove("ocultar");
+        apellidoValido = false;
+    }
+    else{
+        spanError.classList.add("ocultar");
+        apellidoValido = true;
+    }
 }
-else{
-    spanError.classList.add("ocultar");
-    apellidoValido = true;
-}
-}
+
 const inputApellido = document.getElementById("nuevoApellido")
 inputApellido.addEventListener("input", validarApellidos);
 
@@ -49,17 +50,17 @@ const maxLongitud = 100;
 
 contadorCorreo.textContent = `${correo.length}/${maxLongitud}`;
 
-if(correo === ''){
-    spanError.classList.add("ocultar");
-    correoValido = false;
-}
-else if (correo.length > maxLongitud || !regexCorreo.test(correo)){
-    spanError.classList.remove("ocultar");
-    correoValido = false;
-} else {
-    spanError.classList.add("ocultar");
-    correoValido = true;
-}
+    if(correo === ''){
+        spanError.classList.add("ocultar");
+        correoValido = false;
+    }
+    else if (correo.length > maxLongitud || !regexCorreo.test(correo)){
+        spanError.classList.remove("ocultar");
+        correoValido = false;
+    } else {
+        spanError.classList.add("ocultar");
+        correoValido = true;
+    }
 }
 const inputCorreo = document.getElementById("nuevoCorreos");
 inputCorreo.addEventListener("input", validarCorreos);
@@ -68,13 +69,13 @@ function validarSemestre() {
 const semestreSeleccionado = document.getElementById("nuevoSemestres").value;
 const spanErrorSemestres = document.getElementById("mensajesErrorSemestres");
 
-if (semestreSeleccionado === "0") {
-    // Muestra el mensaje de error
-    spanErrorSemestres.classList.remove("ocultar");
-} else {
-    // Oculta el mensaje de error
-    spanErrorSemestres.classList.add("ocultar");
-}
+    if (semestreSeleccionado === "0") {
+        // Muestra el mensaje de error
+        spanErrorSemestres.classList.remove("ocultar");
+    } else {
+        // Oculta el mensaje de error
+        spanErrorSemestres.classList.add("ocultar");
+    }
 }
 // Añadir el event listener al select
 const selectSemestre = document.getElementById("nuevoSemestres");
@@ -84,13 +85,13 @@ function validarDescripcion() {
 const descripcion = document.getElementById("nuevaDescripcion").value;
 const mensajeErrorDescripcion = document.getElementById("mensajeErrorDescripcion");
 
-if (descripcion.trim() === '') {
-    mensajesErrorDescripcion.classList.remove("ocultar");
-    descripcionValida = false;
-} else {
-    mensajesErrorDescripcion.classList.add("ocultar");
-    descripcionValida = true;
-}
+    if (descripcion.trim() === '') {
+        mensajesErrorDescripcion.classList.remove("ocultar");
+        descripcionValida = false;
+    } else {
+        mensajesErrorDescripcion.classList.add("ocultar");
+        descripcionValida = true;
+    }
 }
 
 const textAreaDescripcion = document.getElementById("nuevaDescripcion");
