@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.ui.Model;
 import com.formulario.form.entity.Application;
 import com.formulario.form.ApplicationRepository.ApplicationRepository;
 
@@ -22,7 +23,7 @@ public class formularioController {
     private ApplicationRepository applicationRepository;
 
     @PostMapping("/submit")
-    public String enviarFormulario(Application formData){
+    public String enviarFormulario(Application formData, Model model){
         String nombres = formData.getNombres();
         String apellidos = formData.getApellidos();
         String correo = formData.getCorreos();
@@ -38,7 +39,7 @@ public class formularioController {
 
         applicationRepository.save(application);
 
-        //model.addAttribute("graciasMensaje","Gracias por enviar el formulario!");
+        model.addAttribute("graciasMensaje","Gracias por enviar el formulario!");
         return "formulario.html";
     }
 }
