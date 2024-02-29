@@ -14,7 +14,7 @@
       <legend>Contactenos</legend>
     <div>
       <label> Nombres: </label>
-      <input class ="centrado" id="nuevoNombre" type="text" name="names" placeholder="Juan Guillermo" required  maxlength="100"> </input>
+      <input class ="centrado" id="nuevoNombre" type="text" name="nombres" placeholder="Juan Guillermo" required  maxlength="100"> </input>
       <!-- CONTADOR PARA QUE NO SE PASE DE 100-->
       <span id="contadorNombre">0/100</span>
     
@@ -46,7 +46,7 @@
         </div>
         <div>
             <label for="semestres">Semestre:</label>
-            <select id = "nuevoSemestres">
+            <select id = "nuevoSemestres" name = "semestre">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -70,7 +70,7 @@
         </div>
         <div>
         <label for="descripciones">Descripcion:</label></p>
-        <textarea id="nuevaDescripcion" name="descripciones" rows="4" cols="50" required></textarea>
+        <textarea id="nuevaDescripcion" name="descripcion" rows="4" cols="50" required></textarea>
         <span id="mensajesErrorDescripcion" class = "textError ocultar">
           Este segmento es obligatorio
         </span>
