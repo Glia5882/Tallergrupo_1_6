@@ -76,7 +76,7 @@
 	        <h3>- Navegación:</h3>
 		        <p>Un menú de navegación eficiente y fácil de usar que conecte todas las secciones de la página.</p>
         </ul>
-	<ul>
+	    <ul>
 	    <h2>Requisitos No Funcionales </h2>
             <h3>- Usabilidad:</h3>
         	    <p>Diseño intuitivo y fácil de usar, adecuado para todos los usuarios, independientemente de su experiencia técnica.</p>
@@ -92,37 +92,505 @@
 	        <h3>- Despliegue y Mantenimiento:</h3>
                 <p>La página debe estar correctamente desplegada en una plataforma accesible públicamente.</p>
                 <p>Documentación adecuada para el mantenimiento y actualizaciones futuras.</p>
-	</ul>
+	    </ul>
 
-    <h1> Primera Entrega Proyecto</h1>
-    <h1> ARRIENDA TU FINCA</h1>
-
-    <h2> Diagramas </h2>
-    <h3> Modelo Entidad Relacion</h3>
-  
-    <table>
-        <tr>
-            <td>
-                <img src="/grupo16/imagenes/modeloEntidadRelacion.jpg" id="Modelo">
-            </td>
-            <td>
-                <h4>Descripcion</h4>
-                <p>Modelo Entidad Relacion, esta herramienta permite representar de manera simplificada como personas objetos o conceptos se relacionan entre si</p>
-                <h3>¿Qué podras encontrar en este modelo? </h3>
-                <ul>
-                    <li>Arrendador</li>
-                    <li>Arrendatario</li>
-                    <li>Propiedad</li>
-                    <li>Solicitudes</li>
-                    <li>Estado Solcitud</li>
-                    <li>Tipo de ingreso</li>
-                </ul>  
-                  
-            </td>
-        </tr>
-    </table>
+    </section>
     
     
+    <section id="primeraEntrega">
+
+        <h1> Primera Entrega Proyecto</h1>
+        <h1> ARRIENDA TU FINCA</h1>
+
+        <h2> Diagramas </h2>
+        <h3> Modelo Entidad Relacion</h3>
+    
+        <section id="modeloEntidadRelacion">
+        <table>
+            <tr>
+                <td>
+                    <img src="/grupo16/imagenes/modeloEntidadRelacion.jpg" id="modelo">
+                </td>
+                <td>
+                    <h4>Descripcion</h4>
+                    <p>Modelo Entidad Relacion, esta herramienta permite representar de manera simplificada como personas objetos o conceptos se relacionan entre si</p>
+                    <h3>¿Qué podras encontrar en este modelo? </h3>
+                    <ul>
+                        <li>Arrendador</li>
+                        <li>Arrendatario</li>
+                        <li>Propiedad</li>
+                        <li>Solicitudes</li>
+                        <li>Estado Solcitud</li>
+                        <li>Tipo de ingreso</li>
+                    </ul>  
+                    
+                </td>
+            </tr>
+        </table>
+        </section>
+
+        <section id="historiasDeUsuario">  
+
+            <h2> Historias de Usuario</h2>
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Creacion de Cuenta</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero poder crear una cuenta de un usuario en el sistema que pueda manejar propiedades
+                        Para que pueda acceder a las herramientas y recursos necesarios para realizar las actividades del sistema.</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Cuando accedo al sistema por primera vez, veo una opción clara para crear una cuenta de usuario.
+                        – Al hacer clic en “Crear cuenta”, se me redirige a un formulario de registro.
+                        – En el formulario de registro, debo proporcionar la siguiente información:
+                        Nombres (obligatorio)
+                        Apellidos (obligatorio)
+                        Correo electrónico (obligatorio)
+                        Teléfono
+                        Contraseña
+                        – El sistema valida que el correo electrónico corporativo sea único y válido.
+                        – El sistema valida que el correo sea único y cumpla con las políticas de nomenclatura de la empresa.
+                        – La contraseña debe cumplir con los requisitos de seguridad mínimos, como tener al menos 8 caracteres.
+                        – Después de enviar el formulario, recibo una confirmación que mi cuenta ha sido creada con éxito y con un enlace que va permitir activar la cuenta.
+                        – Si ingreso información incorrecta o no válida en el formulario de registro, recibo mensajes de error claros que me indican cómo corregir los problemas.
+                        – Después de crear la cuenta y acceder al sistema, tengo acceso a las herramientas y recursos necesarios para llevar a cabo mis responsabilidades laborales.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Activación de cuenta</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero activar mi cuenta
+                        Para que pueda acceder a las herramientas y recursos necesarios para realizar las actividades del sistema.</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Cuando me llegue el correo de activación, el usuario podrá hacer click en un enlace y esto activará la cuenta y entrará al inicio de la cuenta para poder realizar sus actividades</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autenticación</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero autenticarme en el sistema
+                        Para poder acceder de forma segura a mi cuenta</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Al ingresar a cualquier página si no está autenticado, el sistema lo llevará a la página de autenticación.
+                        – Aquí encontrará un formulario con los siguientes campos:
+                        Correo
+                        Contraseña
+                        Al ingresar el formulario de forma correcta, el sistema lo llevará al inicio de se sesión y en caso que no mostrará el error.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Ver mis propiedades</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero ver las propiedades que tengo a mi cargo
+                        Para poder realizar las acciones que el sistema me va permitir</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Ingreso a la página y me va mostrar una lista/tabla mínimo con los siguiente datos:
+                        Imagen chiquita descriptiva de la imagen
+                        Nombre
+                        Departamento
+                        Municipio
+                        Enlace para editar
+                        Enlace para ver el detalle</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Crear propiedad</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero crear propiedades
+                        Para poder arrendar las propiedaes</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Ingreso a la página donde puedo ver todas las propiedades
+                        – Ahí encontramos un botón que va llevar al formulario de crear una propiedad, donde se econtrarán los siguientes datos:
+                        Nombre (obligatorio)
+                        Departamento/Municipio (obligatorio, verificar en datos abiertos o DANE los Departamentos/Municipio)
+                        Tipo de ingreso (En el municipio, carretera principal, carretera secundaria y carretera terciaria)
+                        Descripción (obligatorio)
+                        Cantidad de habitaciones (obligatorio)
+                        Cantidad de baños (obligatorio)
+                        Permite mascotas (obligatorio)
+                        Tiene piscina (obligatorio)
+                        Tiene asador(obligatorio)
+                        Valor noche
+                        – El sistema debe verificar los datos, en caso de ser exitoso, una vez ingresada irá a una página donde está la información de la finca; en el caso contrario mostrará en detalle cual es el error</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Editar propiedad</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero editar mis propiedades
+                        Para poder arrendar las propiedades y actualizar</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Ingreso a la página donde puedo ver todas las propiedades
+                        – Ahí encontramos un botón por cada propiedad que me va permitir ir al formulario donde se pueden actualizar los datos básicos
+                        – También al ingresar a la propiedad existirá un enlace donde podre ir al formulario donde se pueden actualizar los datos básicos
+                        – Los datos básicos a editar:
+                        Nombre (obligatorio)
+                        Departamento/Municipio (obligatorio, verificar en datos abiertos o DANE los Departamentos/Municipio)
+                        Tipo de ingreso (En el municipio, carretera principal, carretera secundaria y carretera terciaria)
+                        Descripción (obligatorio)
+                        Cantidad de habitaciones (obligatorio)
+                        Cantidad de baños (obligatorio)
+                        Permite mascotas (obligatorio)
+                        Tiene piscina (obligatorio)
+                        Tiene asador(obligatorio)
+                        Valor noche
+                        – El sistema debe verificar los datos, en caso de ser exitoso, una vez ingresada irá a una página donde está la información de la finca; en el caso contrario mostrará en detalle cual es el error</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Subir foto de la propiedad</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero subir fotos de las propiedades
+                        Para poder arrendar mostrar las propiedades de mejor forma</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Ingreso a la página donde puedo ver todas las propiedades
+                        – Ahí encontramos un botón que va llevar al formulario de crear una propiedad, donde se econtrarán los siguientes datos:
+                        – En esa página se encontrará un botón que va mostrar el formulario del subir foto
+                        – Una vez el usuario selecciones la foto y la suba, deberá ir a la página de la propiedad donde podrá var la información de la propiedad</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Desactivar propiedad</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero desactivar propiedades
+                        Para que no me arrienden propiedades que ya no tengo en mi disposición</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Ingreso a la página donde puedo ver todas las propiedades
+                        – Ahí encontramos un botón que va llevar mostrar un diálogo de confirmación para desactivar.
+                        – La propiedad desactivada, si bien no se elimina de la base de datos, no podrá volver a verla.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Ver solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero ver las solicitudes de arriendo
+                        Para poder aceptar o rechazar las solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Ingreso a la página donde puedo ver un listado de solicitudes de arriendo que están activas con los siguientes estados: (1) por aceptar, (2) aceptada, (3) pagada, (4) por calificar.
+                        – También ingresando a la página de la propiedad puedo ver todas las solicitudes de la propiedad con los siguiente estados: (1) por aceptar, (2) aceptada, (3) pagada, (4) por calificar, (5) rechazada, (6) finalizada.
+                        – En los listados se debe ver:
+                        Nombre del solicitante
+                        Fecha y hora que se realiza la solicitud
+                        Fecha de llegada
+                        Fecha de salida
+                        Valor
+                        Estado
+                        Botón en caso de estar en ese estado de aceptar y rechazar solicitud</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Aceptar solicitud de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero aceptar la solicitud de arriendo
+                        Para poder aceptar las solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– En los listados de solicitudes el usuario podrá ver el botón de aceptar, este botón solo se habilitará para las solicitudes que están por aceptar.
+                        – Una vez se acepte pasa a estado por pago</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Cancelar solicitud de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero cancelar la solicitud de arriendo
+                        Para poder cancelar solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– En los listados de solicitudes el usuario podrá ver el botón de cancelar, este botón solo se habilitará para las solicitudes que están por aceptar.
+                        – Una vez se acepte pasa a estado cancelada</th>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Calificar arrendatario</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero calificar el arrendatario
+                        Para poder mostrar cerrar y verificar que tan buenos son los arrendatarios</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– El usuario verá la lista del solicitudes solo en caso de estar por calificar y ya se haya pasado la fecha de entrega, le aparecerá el botón de calificar.
+                        – Al hacer click ahí lo lleva al formulario de calificar donde también se pedirá un comentario.
+                        – Una vez califica, verifica que el usuario arrendador haya calificado la finca y al arrendatario; en caso que todo este calificado pasa a cerrado, en el caso contrario mantiene el estado.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Creación de cuenta</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero poder crear una cuenta de un usuario en el sistema que pueda manejar propiedades
+                        Para que pueda acceder a las herramientas y recursos necesarios para realizar las actividades del sistema.</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Cuando accedo al sistema por primera vez, veo una opción clara para crear una cuenta de usuario.
+                        – Al hacer clic en “Crear cuenta”, se me redirige a un formulario de registro.
+                        – En el formulario de registro, debo proporcionar la siguiente información:
+                        Nombres (obligatorio)
+                        Apellidos (obligatorio)
+                        Correo electrónico (obligatorio)
+                        Teléfono
+                        Contraseña
+                        – El sistema valida que el correo electrónico corporativo sea único y válido.
+                        – El sistema valida que el correo sea único y cumpla con las políticas de nomenclatura de la empresa.
+                        – La contraseña debe cumplir con los requisitos de seguridad mínimos, como tener al menos 8 caracteres.
+                        – Después de enviar el formulario, recibo una confirmación que mi cuenta ha sido creada con éxito y con un enlace que va permitir activar la cuenta.
+                        – Si ingreso información incorrecta o no válida en el formulario de registro, recibo mensajes de error claros que me indican cómo corregir los problemas.
+                        – Después de crear la cuenta y acceder al sistema, tengo acceso a las herramientas y recursos necesarios para llevar a cabo mis responsabilidades laborales.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Activación de cuenta</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero activar mi cuenta
+                        Para que pueda acceder a las herramientas y recursos necesarios para realizar las actividades del sistema.</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Cuando me llegue el correo de activación, el usuario podrá hacer click en un enlace y esto activará la cuenta y entrará al inicio de la cuenta para poder realizar sus actividades</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autenticación</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero autenticarme en el sistema
+                        Para poder acceder de forma segura a mi cuenta</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Al ingresar a cualquier página si no está autenticado, el sistema lo llevará a la página de autenticación.
+                        – Aquí encontrará un formulario con los siguientes campos:
+                        Correo
+                        Contraseña
+                        Al ingresar el formulario de forma correcta, el sistema lo llevará al inicio de se sesión y en caso que no mostrará el error.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Buscar propiedades</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero buscar propiedades
+                        Para poder solicitar el arriendo en fechas específicas</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– El usuario ingresará a un sitio donde se mostrará un listado de propiedades. La lista inicial será de un municipio seleccionado por la herramienta al azar.
+                        – El usuario podrá realizar la búsqueda de propiedades por las siguientes características:
+                        Nombre
+                        Municipio
+                        cantidad de personas
+                        – El listado tendrá mínimo las siguientes columnas:
+                        Imagen chiquita descriptiva de la imagen
+                        Nombre
+                        Departamento
+                        Municipio
+                        Enlace para ver el detalle de la propiedad</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Solicitar arriendo</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero autenticarme en el sistema
+                        Para realizar el paso de previo para pagar el posible arriendo</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– Al ingresar al detalle de la propiedad el arrendatario encontrará un botón donde podra solicitar el arriendo:
+                        – Al hacer click en ese botón, le aparecerá un formulario en el que se deberán llenar los siguientes campos:
+                        Fecha inicial (obligatorio, no puede ser anterior a la fecha actual)
+                        Fecha final (obligatorio, no puede ser anterior a un día posterior a la fecha inicial)
+                        Cantidad de personas (obligatorio y no puede ser superior al que permite la propiedad)
+                        – Una vez se llena de forma correcta se debe ir al listado de solicitudes que deben estar ordenadas de las más reciente a la mas antigua.
+                        – En caso que no se llenen de forma correcta, no permitirá seguir mostrará un mensaje notificando por qué no se realizó el ingreso de la información</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Ver solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero autenticarme en el sistema
+                        Para verificar mis solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– En el menú principal los usuario podrán hacer clic y verificar todas las solicitudes de reserva hechas por el usuario.
+                        – Los datos que se podrán ver en la tabla son:
+                        Nombre de predio
+                        Fecha y hora que se realiza la solicitud
+                        Fecha de llegada
+                        Fecha de salida
+                        Valor
+                        Estado
+                        – Cuando esté en estado de pago, deberá aparecer un botón para ir a realizar el pago.
+                        – Cuando esté en estado de calificación, aparecerá la posibilidad de calificar e insertar un comentario tanto para calificar el predio como para calificar el anfitrión.</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Ver solicitudes de arriendo</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendatario
+                        Quiero autenticarme en el sistema
+                        Para pagar los arriendos</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– En el listado de solicitudes de arriendo cuando la solicitud esté en estado de pago y no esté vencida aparecerá un botón donde se podrá realizar el pago; al hacer clic se abrirá un formulario donde se aparecerá los datos de pago, particularmente:
+                        – Valor, que lo deberá actualizar automáticamente
+                        – Banco, se entregará un listado
+                        – Número de cuenta</th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Calificar finca</th>
+                </tr>
+                <tr>
+                    <th>Descripción: Cómo, quiero, para</th>
+                    <th>Como un usuario arrendador
+                        Quiero calificar el arrendatario
+                        Para poder mostrar cerrar y verificar que tan buenos son los arrendatarios</th>
+                </tr>
+                <tr>
+                    <th>Criterios de Aceptación</th>
+                    <th>– El usuario verá la lista del solicitudes solo en caso de estar por calificar y ya se haya pasado la fecha de entrega, le aparecerá el botón de calificar.
+                        – Al hacer click ahí lo lleva al formulario de calificar donde también se pedirá un comentario.
+                        – Una vez califica, verifica que el usuario arrendador haya calificado la finca y al arrendatario; en caso que todo este calificado pasa a cerrado, en el caso contrario mantiene el estado.</th>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </section>
+
 
     <footer>
         <p>&copy; 2024 Grupo de Desarrollo Web</p>
